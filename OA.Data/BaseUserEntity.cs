@@ -2,7 +2,7 @@
 
 namespace OA.Data
 {
-    public class BaseEntity
+    public class BaseUserEntity
     {
         public Int64 Id { get; set; }
         public DateTime AddedDate { get; set; }
