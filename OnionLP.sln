@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Repo", "OA.Repo\OA.Repo.csproj", "{D87EAE36-B5D0-4BCD-812A-E489D9EC3166}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Service", "OA.Service\OA.Service.csproj", "{4E7714AA-4A66-48DD-8F45-F59DA0059F1C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{525C0D0C-3753-418D-B632-62AD14F58737} = {525C0D0C-3753-418D-B632-62AD14F58737}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
