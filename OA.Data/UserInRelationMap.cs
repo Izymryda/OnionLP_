@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace OA.Data
 {
-    class UserInRelationMap
+    public class UserInRelationMap
     {
         public UserInRelationMap(EntityTypeBuilder<UserInRelation> entityBuilder)
         {

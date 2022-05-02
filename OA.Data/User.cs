@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OA.Data
 {
-    class User : BaseUserEntity
+    public class User : BaseUserEntity
     {
         public string UserName { get; set; }
         public string Email { get; set; }

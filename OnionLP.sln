@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionLP", "OnionLP\OnionLP.csproj", "{F04615CE-FFE6-47DE-9131-375177F3EAA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Data", "OA.Data\OA.Data.csproj", "{525C0D0C-3753-418D-B632-62AD14F58737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Data", "OA.Data\OA.Data.csproj", "{525C0D0C-3753-418D-B632-62AD14F58737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Repo", "OA.Repo\OA.Repo.csproj", "{D87EAE36-B5D0-4BCD-812A-E489D9EC3166}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Repo", "OA.Repo\OA.Repo.csproj", "{D87EAE36-B5D0-4BCD-812A-E489D9EC3166}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Service", "OA.Service\OA.Service.csproj", "{4E7714AA-4A66-48DD-8F45-F59DA0059F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OA.Service", "OA.Service\OA.Service.csproj", "{4E7714AA-4A66-48DD-8F45-F59DA0059F1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F04615CE-FFE6-47DE-9131-375177F3EAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F04615CE-FFE6-47DE-9131-375177F3EAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F04615CE-FFE6-47DE-9131-375177F3EAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F04615CE-FFE6-47DE-9131-375177F3EAA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{525C0D0C-3753-418D-B632-62AD14F58737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{525C0D0C-3753-418D-B632-62AD14F58737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525C0D0C-3753-418D-B632-62AD14F58737}.Release|Any CPU.ActiveCfg = Release|Any CPU

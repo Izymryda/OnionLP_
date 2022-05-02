@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OA.Data
 {
-    class UserInRelation
+    public class UserInRelation
     {
         public int Id { get; set; }
         public DateTime AddedDate { get; set; }

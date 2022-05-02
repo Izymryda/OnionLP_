@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace OA.Data
 {
-    class TypeOfRelationMap
+    public class TypeOfRelationMap
     {
         public TypeOfRelationMap(EntityTypeBuilder<TypeOfRelation> entityBuilder)
         {

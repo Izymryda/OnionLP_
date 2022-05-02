@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OA.Data
 {
-    class TypeOfRelation
+    public class TypeOfRelation
     {
         public int Id { get; set; }
         public string Name { get; set; }        
