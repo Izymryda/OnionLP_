@@ -6,7 +6,7 @@ using OA.Repo;
 
 namespace OA.Service
 {
-    class UserProfileService : IUserProfileService
+    public class UserProfileService : IUserProfileService
     {
         private IRepository<UserProfile> userProfileRepository;
 

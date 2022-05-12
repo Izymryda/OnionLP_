@@ -4,9 +4,8 @@ using System.Text;
 
 namespace OA.Data
 {
-    public class TypeOfRelation
+    public class TypeOfRelation:BaseUserEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }        
     }
 }

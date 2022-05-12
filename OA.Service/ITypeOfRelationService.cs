@@ -9,8 +9,8 @@ namespace OA.Service
     {
         IEnumerable<TypeOfRelation> GetType();
         TypeOfRelation GetType(long id);
-        void InsertType(User user);
-        void UpdateType(User user);
+        void InsertType(TypeOfRelation type);
+        void UpdateType(TypeOfRelation type);
         void DeleteType(long id);
     }
 }
