@@ -6,6 +6,6 @@ namespace OA.Data
 {
     public class TypeOfRelation:BaseUserEntity
     {
-        public string Name { get; set; }        
+        public string Name { get; set; }
     }
 }

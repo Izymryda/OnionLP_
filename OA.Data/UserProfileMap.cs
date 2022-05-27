@@ -13,7 +13,7 @@ namespace OA.Data
             entityBuilder.Property(t => t.FirstName).IsRequired();
             entityBuilder.Property(t => t.LastName).IsRequired();
             entityBuilder.Property(t => t.Sex).IsRequired();
-            entityBuilder.Property(t => t.Address);
+            entityBuilder.Property(t => t.Address);            
         }
     }
 }

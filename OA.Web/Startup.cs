@@ -32,7 +32,9 @@ namespace OA.Web
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IUserProfileService, UserProfileService>();
-            services.AddControllersWithViews();//?
+            services.AddTransient<ITypeOfRelationService, TypeOfRelationService>();
+            services.AddTransient<IUserInRelationService, UserInRelationService>();
+            services.AddControllersWithViews();    
         }
 
         

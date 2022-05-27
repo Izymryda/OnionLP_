@@ -6,7 +6,7 @@ using OA.Repo;
 
 namespace OA.Service
 {
-    class TypeOfRelationService : ITypeOfRelationService
+    public class TypeOfRelationService : ITypeOfRelationService
     {
         private IRepository<TypeOfRelation> typeRepository;
         

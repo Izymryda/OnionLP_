@@ -9,71 +9,90 @@ namespace OA.Web
     {
         public static void Initialize(ApplicationContext context)
         {
-            if(!context.User.Any())
+            if (!context.UserProfiles.Any())
             {
-                context.Peoples.AddRange(
-                    new People
+                context.UserProfiles.AddRange(
+                    new UserProfile
                     {
-                        Name = "Sergiy",
-                        SecondName = "Stroyan",
+                        FirstName="Serhiy",
+                        LastName="Stroyan",
+                        Sex="male",
+                        Address="Kyiv"
+                        
+                    },
+                    new UserProfile
+                    {
+                        FirstName = "Oleg",
+                        LastName = "Kalinyk",
                         Sex = "male",
-                        City = "Khmelnitsky"
+                        Address = "Kyiv"
+
                     },
-                    new People
+                    new UserProfile
                     {
-                        Name = "Oleg",
-                        SecondName = "Kalinyk",
-                        Sex = "male",
-                        City = "Kiev"
-                    },
-                    new People
-                    {
-                        Name = "Tania",
-                        SecondName = "Clot",
+                        FirstName = "Tania",
+                        LastName = "Slot",
                         Sex = "female",
-                        City = "Khmelnitsky"
+                        Address = "Khmelnytskyi"
+
                     },
-                    new People
+                    new UserProfile
                     {
-                        Name = "Ira",
-                        SecondName = "Savchenko",
+                        FirstName = "Ira",
+                        LastName = "Savchenko",
                         Sex = "female",
-                        City = "Kiev"
+                        Address = "Kyiv"
+
+                    });
+            }
+            if (!context.Users.Any())
+            {
+                context.Users.AddRange(
+                    new User
+                    {
+                        UserName = "ChShFront",
+                        Email = "stroyan@gmail.com",
+                        Password = "123"
+                    },
+                    new User
+                    {
+                        UserName = "Kalina",
+                        Email = "olka@outlook.com",
+                        Password = "345"
+                    },
+                    new User
+                    {
+                        UserName = "Izymryda",
+                        Email = "fizmaf96@gmail.com",
+                        Password = "567"
+                    },
+                    new User
+                    {
+                        UserName = "KomokShersti",
+                        Email = "irinka@gmail.com",
+                        Password = "789"
                     }
-                    );
+                    ); 
                 context.SaveChanges();
             }
-            if(!context.Type_Of_Relations.Any())
+            if(!context.TypeOfRelations.Any())
             {
-                context.Type_Of_Relations.AddRange(
-                new Type_of_Relation
-                {
+                context.TypeOfRelations.AddRange(
+                new TypeOfRelation
+                {               
                     Name = "Love"
                 }, 
-                new Type_of_Relation
+                new TypeOfRelation
                 {
                     Name = "Friend"
                 },
-                new Type_of_Relation
+                new TypeOfRelation
                 {
                     Name = "Hobby"
                 }
                 );
                 context.SaveChanges();
-            }
-            if (!context.Pep_N_Rels.Any())
-            {
-                context.Pep_N_Rels.AddRange(
-                new Pep_n_Rel
-                {
-                    Date = System.DateTime.Now,
-                    PeopleId_1 = 1,
-                    PeopleId_2=2,
-                    T_RId = 1
-                }) ;
-                context.SaveChanges();
-            }
-
+            }  
         }
     }
 }
