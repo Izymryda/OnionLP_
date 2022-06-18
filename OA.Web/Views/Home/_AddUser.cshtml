@@ -2,7 +2,7 @@
 @using OA.Web.Models
 
 <form asp-action="AddUser" role="form">
-    @await Html.PartialAsync("_ModalHeader", new ModalHeader { Heading = "Add User" })
+    <!--await Html.PartialAsync("_ModalHeader", new ModalHeader { Heading = "Add User" }-->
     <div class="modal-body form-horizontal">
         <div class="row">
             <div class="col-lg-6">
@@ -47,5 +47,5 @@
             </div>
         </div>
     </div>
-    @await Html.PartialAsync("_ModalFooter", new ModalFooter { })
+    <!--await Html.PartialAsync("_ModalFooter", new ModalFooter { })-->
 </form>  

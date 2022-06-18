@@ -59,7 +59,7 @@ namespace OA.Web.Controllers
                 Password = model.Password,
                 AddedDate = DateTime.UtcNow,
                 ModifiedDate = DateTime.UtcNow,
-                IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString(),
+                //IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString(),
                 UserProfile = new UserProfile
                 {
                     FirstName = model.FirstName,
@@ -67,7 +67,7 @@ namespace OA.Web.Controllers
                     Address = model.Address,
                     AddedDate = DateTime.UtcNow,
                     ModifiedDate = DateTime.UtcNow,
-                    IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString()
+                    //IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString()
                 }
             };
             userService.InsertUser(userEntity);
@@ -99,13 +99,13 @@ namespace OA.Web.Controllers
             User userEntity = userService.GetUser(model.Id);
             userEntity.Email = model.Email;
             userEntity.ModifiedDate = DateTime.UtcNow;
-            userEntity.IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString();
+            //userEntity.IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString();
             UserProfile userProfileEntity = userProfileService.GetUserProfile(model.Id);
             userProfileEntity.FirstName = model.FirstName;
             userProfileEntity.LastName = model.LastName;
             userProfileEntity.Address = model.Address;
             userProfileEntity.ModifiedDate = DateTime.UtcNow;
-            userProfileEntity.IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString();
+            //userProfileEntity.IPAddress = Request.HttpContext.Connection.RemoteIpAddress.ToString();
             userEntity.UserProfile = userProfileEntity;
             userService.UpdateUser(userEntity);
             if (userEntity.Id > 0)

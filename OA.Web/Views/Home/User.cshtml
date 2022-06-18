@@ -1,6 +1,6 @@
-﻿@model IEnumerable<UserViewModel>
+﻿@model IEnumerable<OA.Web.Models.UserViewModel>
 @using OA.Web.Models
-@using OA.Web.Code
+<!--using OA.Web.Code-->
 
 <div class="top-buffer"></div>
 <div class="panel panel-primary">
@@ -45,7 +45,7 @@
     </div>
 </div>
 
-@Html.Partial("_Modal", new BootstrapModel { ID = "modal-action-user", AreaLabeledId = "modal-action-user-label", Size = ModalSize.Large })
+<!--Html.Partial("_Modal", new BootstrapModel { ID = "modal-action-user", AreaLabeledId = "modal-action-user-label", Size = ModalSize.Large })-->
 
 @section scripts
 {
